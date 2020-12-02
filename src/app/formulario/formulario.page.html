@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<div class= "container">
+ <form>
+  <div class="form-group">
+    <label for="exampleFormcontrolInput1">Nombre </label>
+    <input type="text" class="form-control" id="exampleFormcontrolInput1" placeholder="nombre">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">precio</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="Guardar" class="btn btn-primary" (click)="guardarProducto()" >guardar</button>
+</form>
+
+    <div *ngFor="let producto of productos">
+      <div>{{ producto.nombre }}</div>
+      <div>{{ producto.precio }}</div>
+    </div>
+</div>
+</ion-content>
