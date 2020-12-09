@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoPage implements OnInit {
 
+nombre="";
+contacto="";
+asunto="";
+mensage="";
+
+enviar= [];
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
